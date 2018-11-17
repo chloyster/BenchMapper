@@ -2,7 +2,9 @@ package com.example.chris.benchmapper
 
 import android.net.Uri
 import android.os.Bundle
+import android.os.Handler
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -41,7 +43,7 @@ class MapFrag : Fragment(), OnMapReadyCallback {
 
 
         val database = FirebaseDatabase.getInstance()
-        var dbref = database.getReference("Benches")
+        var dbref = database.reference
 
 
 
@@ -52,12 +54,35 @@ class MapFrag : Fragment(), OnMapReadyCallback {
             }
 
             override fun onDataChange(p0: DataSnapshot){
+
+                /*val handler = Handler()
+                handler.postDelayed({
+                    mMap.clear()
+
+                    for (member in p0.children){
+                        val myLatLong : HashMap<String, Long> = member.value as HashMap<String, Long>
+
+                        val theLat = myLatLong["latitude"]!!.toDouble()
+
+                        val theLong  = myLatLong["longitude"]!!.toDouble()
+
+                        mMap.addMarker(MarkerOptions().position(LatLng(theLat, theLong)))
+                    }
+                }, 3000)*/
+
+
+
+
                 mMap.clear()
 
                 for (member in p0.children){
-                    val myLat = member.child("lat").value
-                    val myLong = member.child("long").value
-                    mMap.addMarker(MarkerOptions().position(LatLng(myLat as Double, myLong as Double)))
+                    val myLatLong : HashMap<String, Long> = member.value as HashMap<String, Long>
+
+                    val theLat = myLatLong["latitude"]!!.toDouble()
+
+                    val theLong  = myLatLong["longitude"]!!.toDouble()
+
+                    mMap.addMarker(MarkerOptions().position(LatLng(theLat, theLong)))
                 }
             }
         })

@@ -10,4 +10,76 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Not Yet implemented</string>
+    <string name="pref_description_social_recommendations">unimplemented
+    </string>
+
+    <string name="pref_title_display_name">Not yet implemented</string>
+    <string name="pref_default_display_name">unimplemented</string>
+
+    <string name="pref_title_add_friends_to_messages">Not yet implemented</string>
+    <string-array name="pref_example_list_titles">
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Not yet implemented</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+        <item>...</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">Not yet implemented</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">Not yet implemented</string>
+
+    <string name="pref_title_ringtone">Not yet implemented</string>
+    <string name="pref_ringtone_silent">Not yet implemented</string>
+
+    <string name="pref_title_vibrate">Not yet implemented</string>
 </resources>
